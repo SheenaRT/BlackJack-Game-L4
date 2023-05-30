@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.low-opacity-bg {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.low-opacity-bg::after {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.4; 
+
+    background-image: url("blackjacktable.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(13, 9, 9);
+    text-align: center;
+}
+
+#header {
+    color: rgba(2, 1, 1, 0.815);
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 80px;
+    letter-spacing: 1px;
+    padding: 80px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    text-shadow: 2px 2px #f7f0f0
+}
+
+#smalltext {
+font-size: 60px;
+color: rgba(78, 6, 6, 0.815);
+}
+
+p {
+    font-size: 45px;
+    padding: 20px;
+    font-family: 'Mitr', sans-serif;
+    color: #040a0f;
+}
+
+#message {
+    font-style: italic;
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+    text-shadow: none;
+    color: #0e0f0f;
+}
+
+
+#player {
+    font-size: 30px;
+}
+
+/* styling for both buttons */
+button {
+    color: #181c1ac8;
+    font-size: 20px;
+    width: 200px;
+    background: rgba(248, 215, 131, 0.537);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgba(209, 226, 246, 0.598);
+}
+
