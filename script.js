@@ -5,11 +5,13 @@ let sum = 0;
 let hasBlackjack = false; //has the user got blackjack?
 let isStillInGame = false; //has the user lost?
 let message = "";
+
 let messageEl = document.getElementById("message");
 let sumEl = document.getElementById("sum");
 let cardsEl = document.getElementById("cards");
 let playerEl = document.getElementById("player");
 
+//generate a random card between 1-12
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
   if (randomNumber > 10) {
@@ -73,6 +75,8 @@ let bank = {
 playerEl.textContent = `${bank.name}: $${bank.chips}`;
 
 //crtl + d to highlight everything with the same name
+
+
 
 /*Things to still do:
 - add comma between number array
